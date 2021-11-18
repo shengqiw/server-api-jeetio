@@ -25,10 +25,10 @@ app.listen(3000, function () {
 const wrapJSX = (data) => {
   return Object.keys(data).forEach((key) => {
     (
-      <>
+      <div>
         <h5>{key}</h5>
         <p>{data[key]}</p>
-      </>
+      </div>
     ).join("");
   });
 };
