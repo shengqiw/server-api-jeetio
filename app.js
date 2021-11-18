@@ -9,6 +9,6 @@ app.get("/", async (req, res) => {
   );
   res.status(200).send(data);
 });
-app.listen(8080, function () {
+app.listen(3000, function () {
   console.log("Example app listening on port 3000!");
 });
