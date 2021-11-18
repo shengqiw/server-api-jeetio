@@ -14,14 +14,10 @@ app.get("/", async (req, res) => {
         Accept: "application/json",
       },
     }
-  ).then((res) => wrapJSX(res.json()));
+  ).then((res) => res.json());
 
   res.status(200).send(data);
 });
 app.listen(3000, function () {
   console.log("Example app listening on port 3000!");
 });
-
-const wrapJSX = (data) => {
-  return Object.keys(data).map((key) => `{key}: data[key]\n`);
-};
