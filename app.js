@@ -29,7 +29,7 @@ app.get("/", async (req, res) => {
   res.status(okStatus).send(data);
 });
 
-app.get("/clan", (req, res) => {
+app.get("/clan", async (req, res) => {
   const data = await fetch("https://api.clashroyale.com/v1/clans/%23PRURJPJP", {
     method: "GET",
     headers: {
